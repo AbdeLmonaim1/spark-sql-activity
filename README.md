@@ -1,4 +1,4 @@
-# 🚴‍♂️ Bike Sharing Analysis - Apache Spark SQL Activity
+#  Bike Sharing Analysis - Apache Spark SQL Activity
 
 <div align="center">
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Features](#-features)
@@ -33,7 +33,7 @@
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 This project is a **practical Big Data analytics activity** that demonstrates the power of **Apache Spark SQL** for analyzing bike-sharing rental data. It covers essential Spark SQL operations including data loading, temporary views, SQL queries, aggregations, time-based analysis, and user behavior insights.
 
@@ -41,19 +41,19 @@ The project simulates a real-world scenario where a bike-sharing company wants t
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔄 **Automated Data Generation** - Generate realistic bike rental datasets with customizable size
-- 📊 **Comprehensive SQL Analysis** - 6 major exercise categories covering different aspects of data analysis
-- ⏰ **Time-Based Insights** - Peak hour analysis and temporal pattern detection
-- 👥 **User Behavior Analytics** - Demographic analysis by age groups and gender
-- 💰 **Revenue Analysis** - Profitability metrics and pricing patterns
-- 🗺️ **Route Analysis** - Popular stations and profitable routes identification
-- 🎨 **Clean Console Output** - Well-formatted results with clear section headers
+-  **Automated Data Generation** - Generate realistic bike rental datasets with customizable size
+-  **Comprehensive SQL Analysis** - 6 major exercise categories covering different aspects of data analysis
+-  **Time-Based Insights** - Peak hour analysis and temporal pattern detection
+-  **User Behavior Analytics** - Demographic analysis by age groups and gender
+-  **Revenue Analysis** - Profitability metrics and pricing patterns
+-  **Route Analysis** - Popular stations and profitable routes identification
+-  **Clean Console Output** - Well-formatted results with clear section headers
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
@@ -73,7 +73,7 @@ The project simulates a real-world scenario where a bike-sharing company wants t
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 spark-sql-activity/
@@ -97,14 +97,14 @@ spark-sql-activity/
 
 ---
 
-## 📦 Prerequisites
+##  Prerequisites
 
 Before running this project, ensure you have:
 
-- ✅ **Java Development Kit (JDK) 21** or **JDK 17** installed
-- ✅ **Apache Maven 3.9+** installed
-- ✅ **Minimum 4GB RAM** (recommended for Spark)
-- ✅ **Windows 10/11**, **Linux**, or **macOS**
+-  **Java Development Kit (JDK) 21** or **JDK 17** installed
+-  **Apache Maven 3.9+** installed
+-  **Minimum 4GB RAM** (recommended for Spark)
+-  **Windows 10/11**, **Linux**, or **macOS**
 
 ### Verify Installation
 
@@ -118,7 +118,7 @@ mvn -version
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Step 1: Clone or Download the Project
 
@@ -150,7 +150,7 @@ mvn clean compile exec:java -Dexec.mainClass="ma.enset.BikeRentalAnalysis" -Dexe
 
 ---
 
-## 💻 Usage
+##  Usage
 
 ### Running from IDE (IntelliJ IDEA / Eclipse)
 
@@ -190,46 +190,46 @@ To avoid JVM arguments, downgrade to Java 17:
 
 ---
 
-## 📚 Exercises Covered
+##  Exercises Covered
 
-### 🔹 Exercise 1: Data Loading & Exploration
+###  Exercise 1: Data Loading & Exploration
 - Load CSV file with schema inference
 - Display DataFrame schema
 - Show sample records
 - Count total rentals
 
-### 🔹 Exercise 2: Create Temporary View
+###  Exercise 2: Create Temporary View
 - Register DataFrame as SQL temporary view
 - Verify view accessibility
 
-### 🔹 Exercise 3: Basic SQL Queries
+###  Exercise 3: Basic SQL Queries
 - Filter rentals by duration (`> 30 minutes`)
 - Filter by specific station (`Station A`)
 - Calculate total revenue using `SUM()` aggregation
 
-### 🔹 Exercise 4: Aggregation Queries
+###  Exercise 4: Aggregation Queries
 - Count rentals per station with `GROUP BY`
 - Calculate average duration per station
 - Find station with highest rental count using `ORDER BY` and `LIMIT`
 
-### 🔹 Exercise 5: Time-Based Analysis
+###  Exercise 5: Time-Based Analysis
 - Extract hour from timestamp using `HOUR()` function
 - Identify peak rental hours
 - Find most popular morning station (7 AM - 12 PM)
 
-### 🔹 Exercise 6: User Behavior Analysis
+###  Exercise 6: User Behavior Analysis
 - Calculate average user age
 - Analyze rentals by gender distribution
 - Segment users into age groups using `CASE WHEN`
 
-### 🎁 Bonus: Additional Insights
+###  Bonus: Additional Insights
 - Most profitable routes (station pairs)
 - Average price by duration categories
 - Revenue optimization opportunities
 
 ---
 
-## 📊 Sample Output
+##  Sample Output
 
 When you run the analysis, you'll see structured output like this:
 
@@ -273,9 +273,9 @@ Top 3 Peak Hours:
 
 ---
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
-### ❌ Error: `IllegalAccessError: sun.nio.ch.DirectBuffer`
+###  Error: `IllegalAccessError: sun.nio.ch.DirectBuffer`
 
 **Cause:** Java 21 module access restrictions
 
@@ -284,7 +284,7 @@ Top 3 Peak Hours:
 mvn clean compile exec:java -Dexec.mainClass="ma.enset.BikeRentalAnalysis" -Dexec.cleanupDaemonThreads=false
 ```
 
-### ❌ Error: `Unable to resolve table 'bike_rentals_view'`
+###  Error: `Unable to resolve table 'bike_rentals_view'`
 
 **Cause:** CSV file not found or empty
 
@@ -293,13 +293,13 @@ mvn clean compile exec:java -Dexec.mainClass="ma.enset.BikeRentalAnalysis" -Dexe
 2. Verify `bike_sharing.csv` exists in the project root
 3. Check file is not empty (should be ~80KB for 1000 records)
 
-### ❌ Error: `HADOOP_HOME is unset`
+###  Error: `HADOOP_HOME is unset`
 
 **Cause:** Windows-specific Hadoop warning (harmless)
 
 **Solution:** This is just a warning and doesn't affect functionality. You can safely ignore it.
 
-### ❌ Maven Build Fails
+###  Maven Build Fails
 
 **Solution:**
 ```bash
@@ -312,49 +312,49 @@ mvn -version
 
 ---
 
-## 🎓 Learning Outcomes
+##  Learning Outcomes
 
 By completing this activity, you will learn:
 
-- ✅ How to initialize and configure a **SparkSession**
-- ✅ Loading and exploring data with **Spark DataFrames**
-- ✅ Creating and using **Temporary SQL Views**
-- ✅ Writing **SQL queries** in Spark (SELECT, WHERE, GROUP BY, ORDER BY)
-- ✅ Using **aggregate functions** (COUNT, SUM, AVG, ROUND)
-- ✅ Working with **timestamp functions** (HOUR, BETWEEN)
-- ✅ Implementing **conditional logic** with CASE WHEN
-- ✅ Performing **multi-level aggregations** and **window operations**
-- ✅ Analyzing **real-world business metrics** with Big Data tools
-- ✅ Understanding **Spark SQL optimization** and best practices
+-  How to initialize and configure a **SparkSession**
+-  Loading and exploring data with **Spark DataFrames**
+-  Creating and using **Temporary SQL Views**
+-  Writing **SQL queries** in Spark (SELECT, WHERE, GROUP BY, ORDER BY)
+-  Using **aggregate functions** (COUNT, SUM, AVG, ROUND)
+-  Working with **timestamp functions** (HOUR, BETWEEN)
+-  Implementing **conditional logic** with CASE WHEN
+-  Performing **multi-level aggregations** and **window operations**
+-  Analyzing **real-world business metrics** with Big Data tools
+-  Understanding **Spark SQL optimization** and best practices
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Here are some ideas for enhancements:
 
-- 📈 Add data visualization with Apache Zeppelin or Jupyter
-- 🌍 Implement geospatial analysis for station locations
-- 🤖 Add machine learning models for demand prediction
-- 📊 Create interactive dashboards with Spark + Tableau
-- 🔄 Implement streaming analysis with Spark Structured Streaming
+-  Add data visualization with Apache Zeppelin or Jupyter
+-  Implement geospatial analysis for station locations
+-  Add machine learning models for demand prediction
+-  Create interactive dashboards with Spark + Tableau
+-  Implement streaming analysis with Spark Structured Streaming
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License** - feel free to use it for educational purposes.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Master SDIA - Big Data Course**  
 *Semester 3 - Spark SQL Activity*
 
 ---
 
-## 📞 Support
+##  Support
 
 If you encounter any issues or have questions:
 
@@ -365,9 +365,4 @@ If you encounter any issues or have questions:
 ---
 
 <div align="center">
-
-### ⭐ If you found this project helpful, please give it a star!
-
-**Made with ❤️ using Apache Spark**
-
 </div>
